@@ -1,8 +1,12 @@
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
+import { createRequire } from 'node:module';
 import { resolveApiKey } from '../core/auth.js';
 import { LeadMagicClient } from '../core/client.js';
 import { allCommands } from '../commands/index.js';
+
+const _require = createRequire(import.meta.url);
+const { version } = _require('../../package.json') as { version: string };
 
 export async function startMcpServer(): Promise<void> {
   const apiKey = await resolveApiKey();
@@ -10,7 +14,7 @@ export async function startMcpServer(): Promise<void> {
 
   const server = new McpServer({
     name: 'leadmagic',
-    version: '0.1.0',
+    version,
   });
 
   for (const cmdDef of allCommands) {

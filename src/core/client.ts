@@ -10,10 +10,13 @@ import {
   ValidationError,
 } from './errors.js';
 
+import { createRequire } from 'node:module';
+const _require = createRequire(import.meta.url);
+const { version: VERSION } = _require('../../package.json') as { version: string };
+
 const BASE_URL = 'https://api.leadmagic.io';
 const DEFAULT_TIMEOUT = 30_000;
 const DEFAULT_MAX_RETRIES = 2;
-const VERSION = '0.1.0';
 
 function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
