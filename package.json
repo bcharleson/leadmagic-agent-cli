@@ -1,0 +1,53 @@
+{
+  "name": "leadmagic-agent-cli",
+  "version": "1.0.0",
+  "description": "CLI and MCP server for the LeadMagic API — people enrichment, company intel, job data, and ad intelligence",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "leadmagic": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^8.3.0",
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "commander": "^14.0.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "leadmagic",
+    "cli",
+    "mcp",
+    "email-finder",
+    "people-enrichment",
+    "b2b",
+    "data-enrichment",
+    "ai-agent"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bcharleson/leadmagic-agent-cli"
+  },
+  "homepage": "https://github.com/bcharleson/leadmagic-agent-cli#readme",
+  "bugs": {
+    "url": "https://github.com/bcharleson/leadmagic-agent-cli/issues"
+  }
+}
