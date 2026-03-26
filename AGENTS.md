@@ -708,8 +708,8 @@ leadmagic mcp
 }
 ```
 
-**Available MCP tools (20):**
-`people_validate_email`, `people_find_email`, `people_find_mobile`, `people_profile`, `people_email_to_profile`, `people_profile_to_email`, `people_personal_email`, `people_find_role`, `people_find_employees`, `people_job_change`, `companies_search`, `companies_competitors`, `companies_funding`, `companies_technographics`, `jobs_find`, `jobs_countries`, `jobs_types`, `ads_google`, `ads_meta`, `ads_b2b`
+**Available MCP tools (18):**
+`people_validate_email`, `people_find_email`, `people_find_mobile`, `people_profile`, `people_email_to_profile`, `people_profile_to_email`, `people_personal_email`, `people_find_role`, `people_find_employees`, `people_job_change`, `companies_search`, `companies_competitors`, `companies_funding`, `companies_technographics`, `jobs_find`, `ads_google`, `ads_meta`, `ads_b2b`
 
 ---
 
