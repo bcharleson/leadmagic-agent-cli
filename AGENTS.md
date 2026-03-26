@@ -54,8 +54,6 @@ Credits are only charged on **successful results** ("pay for found"). If no resu
 | `companies funding` | 4 | Free if not found |
 | `companies technographics` | 1 | Free if not found |
 | `jobs find` | 1/job returned | Free if no results |
-| `jobs countries` | 0 | Free lookup table |
-| `jobs types` | 0 | Free lookup table |
 | `ads google` | 0.2 | Free if not found |
 | `ads meta` | 0.2 | Free if not found |
 | `ads b2b` | 0.2 | Free if not found |
@@ -597,26 +595,6 @@ Response (real shape):
 **Cost:** 1 credit per job in results (3 jobs = 3 credits)
 
 Useful `--fields`: `count,results`
-
----
-
-#### jobs countries
-Lookup table for country IDs to use with `jobs find`. Free.
-
-```bash
-leadmagic jobs countries
-# Returns: [{"id": 238, "name": "United States", "code": "US"}, ...]
-```
-
----
-
-#### jobs types
-Lookup table for job type IDs to use with `jobs find`. Free.
-
-```bash
-leadmagic jobs types
-# Returns: [{"id": 1, "name": "Full Time"}, {"id": 2, "name": "Part Time"}, ...]
-```
 
 ---
 

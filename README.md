@@ -3,7 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/leadmagic-agent-cli)](https://www.npmjs.com/package/leadmagic-agent-cli)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-A dual-mode CLI and MCP server for the [LeadMagic API](https://leadmagic.io). Wraps all 20 LeadMagic endpoints as agent-native tools — people enrichment, company intelligence, job data, and ad intelligence.
+A dual-mode CLI and MCP server for the [LeadMagic API](https://leadmagic.io). Wraps all 18 LeadMagic endpoints as agent-native tools — people enrichment, company intelligence, job data, and ad intelligence.
 
 **npm:** `leadmagic-agent-cli` | **bin:** `leadmagic` | **GitHub:** [bcharleson/leadmagic-cli](https://github.com/bcharleson/leadmagic-cli)
 
@@ -110,12 +110,10 @@ leadmagic ads b2b --domain salesforce.com --pretty
 | `companies funding` | Funding rounds + financial data | 4 |
 | `companies technographics` | Technology stack detection | 1 |
 
-### Jobs (3 endpoints)
+### Jobs (1 endpoint)
 | Command | Description | Credits |
 |---------|-------------|---------|
 | `jobs find` | Search job postings (rich filters) | 1/job |
-| `jobs countries` | Country lookup for filters | free |
-| `jobs types` | Job type lookup for filters | free |
 
 ### Ads (3 endpoints)
 | Command | Description | Credits |
@@ -199,7 +197,7 @@ leadmagic mcp
 }
 ```
 
-All 20 API endpoints are registered as MCP tools. See [AGENTS.md](AGENTS.md) for the complete agent reference including real response shapes, credit costs, and workflow patterns.
+All 18 API endpoints are registered as MCP tools. See [AGENTS.md](AGENTS.md) for the complete agent reference including real response shapes, credit costs, and workflow patterns.
 
 ---
 

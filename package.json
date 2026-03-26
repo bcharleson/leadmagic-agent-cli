@@ -1,6 +1,6 @@
 {
   "name": "leadmagic-agent-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI and MCP server for the LeadMagic API — people enrichment, company intel, job data, and ad intelligence",
   "type": "module",
   "main": "dist/index.js",
