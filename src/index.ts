@@ -1,5 +1,9 @@
 import { Command } from 'commander';
+import { createRequire } from 'node:module';
 import { registerAllCommands } from './commands/index.js';
+
+const require = createRequire(import.meta.url);
+const { version } = require('../package.json') as { version: string };
 
 const program = new Command();
 
@@ -8,7 +12,7 @@ program
   .description(
     'LeadMagic CLI — people enrichment, company intel, job data, and ad intelligence.\nDual-mode: runs as a standard CLI or as an MCP server for AI agents.',
   )
-  .version('0.1.0')
+  .version(version)
   .option('--api-key <key>', 'LeadMagic API key (overrides env + stored config)')
   .option('--output <format>', 'Output format: json (default) or pretty')
   .option('--pretty', 'Pretty-print JSON output (shorthand for --output pretty)')
