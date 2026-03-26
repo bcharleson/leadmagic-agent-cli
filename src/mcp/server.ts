@@ -6,7 +6,7 @@ import { LeadMagicClient } from '../core/client.js';
 import { allCommands } from '../commands/index.js';
 
 const _require = createRequire(import.meta.url);
-const { version } = _require('../../package.json') as { version: string };
+const { version } = _require('../package.json') as { version: string };
 
 export async function startMcpServer(): Promise<void> {
   const apiKey = await resolveApiKey();

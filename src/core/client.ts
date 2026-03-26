@@ -12,7 +12,7 @@ import {
 
 import { createRequire } from 'node:module';
 const _require = createRequire(import.meta.url);
-const { version: VERSION } = _require('../../package.json') as { version: string };
+const { version: VERSION } = _require('../package.json') as { version: string };
 
 const BASE_URL = 'https://api.leadmagic.io';
 const DEFAULT_TIMEOUT = 30_000;
